@@ -3,7 +3,7 @@ requires = ["setuptools>=82.0.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "authorizenet"
+name = "terminusgps_authorizenet"
 version = "2.0.0"
 description = "Authorize.Net Python SDK"
 requires-python = ">=3.14"
