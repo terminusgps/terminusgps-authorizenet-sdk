@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "terminusgps_authorizenet"
-version = "2.1.0"
+version = "2.2.0"
 description = "Authorize.Net Python SDK"
 requires-python = ">=3.14"
 readme = "README.md"
@@ -36,9 +36,6 @@ Repository = "https://github.com/terminusgps/terminusgps-authorizenet-sdk/"
 
 [tool.setuptools]
 packages = ["authorizenet"]
-
-[tool.setuptools.packages.find]
-where = ["contrib", "docs", "tests*"]
 
 [project.optional-dependencies]
 test = ["nose==1.*", "mock==2.*"]
