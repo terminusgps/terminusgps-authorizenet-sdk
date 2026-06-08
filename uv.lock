@@ -3,32 +3,6 @@ revision = 3
 requires-python = ">=3.14"
 
 [[package]]
-name = "authorizenet"
-version = "2.0.0"
-source = { editable = "." }
-dependencies = [
-    { name = "lxml" },
-    { name = "pyxb-x" },
-    { name = "requests" },
-]
-
-[package.optional-dependencies]
-test = [
-    { name = "mock" },
-    { name = "nose" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "lxml", specifier = ">=6.1.1" },
-    { name = "mock", marker = "extra == 'test'", specifier = "==2.*" },
-    { name = "nose", marker = "extra == 'test'", specifier = "==1.*" },
-    { name = "pyxb-x", specifier = ">=1.2.6.3" },
-    { name = "requests", specifier = ">=2.34.2" },
-]
-provides-extras = ["test"]
-
-[[package]]
 name = "certifi"
 version = "2026.5.20"
 source = { registry = "https://pypi.org/simple" }
@@ -206,6 +180,32 @@ sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
 ]
+
+[[package]]
+name = "terminusgps-authorizenet"
+version = "2.0.0"
+source = { editable = "." }
+dependencies = [
+    { name = "lxml" },
+    { name = "pyxb-x" },
+    { name = "requests" },
+]
+
+[package.optional-dependencies]
+test = [
+    { name = "mock" },
+    { name = "nose" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "lxml", specifier = ">=6.1.1" },
+    { name = "mock", marker = "extra == 'test'", specifier = "==2.*" },
+    { name = "nose", marker = "extra == 'test'", specifier = "==1.*" },
+    { name = "pyxb-x", specifier = ">=1.2.6.3" },
+    { name = "requests", specifier = ">=2.34.2" },
+]
+provides-extras = ["test"]
 
 [[package]]
 name = "urllib3"

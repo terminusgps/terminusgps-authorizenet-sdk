@@ -7,6 +7,8 @@ name = "terminusgps_authorizenet"
 version = "2.0.0"
 description = "Authorize.Net Python SDK"
 requires-python = ">=3.14"
+readme = "README.md"
+
 
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -28,6 +30,9 @@ dependencies = [
     "pyxb-x>=1.2.6.3",
     "requests>=2.34.2",
 ]
+
+[project.urls]
+Repository = "https://github.com/terminusgps/terminusgps-authorizenet-sdk/"
 
 [tool.setuptools.packages.find]
 where = ["contrib", "docs", "tests*"]
